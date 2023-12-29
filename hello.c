@@ -25,7 +25,7 @@ int main(void) /* Main funciton of the program, where execution begins */
     ptr_phone = fgets(phone, MAX, stdin);
     // scanf("%s", &phone);
 
-    printf("-------------");
+    printf("-------------\n");
 
     printf("Name: %s\n", ptr_name);
     printf("DOB : %s\n", ptr_DOB);
