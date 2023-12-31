@@ -13,9 +13,15 @@ int main() {
     // Area of circle (pi)(radius)^2
     // Perimeter of circle 2*(pi)*(r)
 
+    // The code below will allow you to choose the radius of the circle
+    // Then, the program will calculate both the perimeter and the area of this circle
     int radius;
+    int * ptr_radius;
+    printf("Type in the integer for the radius of your circle: ");
+    scanf("%d", &radius);
+
     float area, perimeter;
-    radius = 6;
+    // radius = 6;
 
     // Area of a circle
     area = PI * radius * radius;
