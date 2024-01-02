@@ -15,7 +15,12 @@ Days: 3
 int main()
 {
     int days, weeks, years;
-    days = 1329;
+    // int * ptr_days;
+
+    printf("Enter any number of days: ");
+    scanf("%d", &days);
+
+    // days = 1329; 
     // weeks = (days / 52);
     weeks = (days % 365) / 7;
     years = days / 365;
