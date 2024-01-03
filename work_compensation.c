@@ -35,7 +35,7 @@ int main()
 
     double salary = money * hours;
 
-    printf("Employee %s's total compensation this month: $ %lf \n", ptr_emp_id, salary);
+    printf("Employee %s's total compensation this month: $ %.2lf \n", ptr_emp_id, salary);
 
     return 0;
 }
