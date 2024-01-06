@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
 
 /*
 Write a program in C to read 10 numbers from the keyboard and find their sum and average.
@@ -15,26 +17,47 @@ The Average is : 5.500000
 
 int main() 
 {
-    int x, n, sum = 0;
+    int x, nums, sum = 0;
+    // int * p_nums = &nums[x];
     float avg;
 
-    printf("Input the 10 numbers: \n");
+    int * p_nums = malloc(sizeof(int));
+    * p_nums = nums;
 
-    for(x = 1; x <= 10; x++) {
-        printf("Number %d : ", x);
-        scanf("%d", &n);
-        sum += n;
 
-        // printf("%d", n);s
+    printf("How many numbers would you like to use? ");
+    scanf("%d", &nums);
 
+
+
+    for(x = 1; x <= nums; x++) {
+        printf("Number - %d : ", x);
+        scanf("%d", p_nums);
+
+        sum += nums;
     }
 
-    // avg = sum / 10;
 
-    printf("%d numbers were entered: \n", x);
+    avg = sum / nums;
+
+    // for(x = 1; x <= nums[x]; x++) {
+    //     printf("Number %d : ", x);
+    //     scanf("%d", p_nums);
+    //     sum += nums[x];
+
+    //     // printf("%d", n)
+    //     avg = sum / nums[x];
+
+    // }
+
+   
+
+    printf("%d numbers were entered: \n", x - 1);
 
     printf("Sum: %d \n", sum);
     printf("Average: %f \n", avg);
+
+    free(p_nums);
     
     return 0;
 }
