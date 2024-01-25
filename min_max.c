@@ -18,13 +18,13 @@ int main()
 {
     int num1, num2, num3, result, max;
     printf("Enter number 1: ");
-    scanf("%d", &num1);
+    scanf("%d", &num1); // 25
 
     printf("Enter number 2: ");
-    scanf("%d", &num2);
+    scanf("%d", &num2); // 35
 
     printf("Enter number 3: ");
-    scanf("%d", &num3);
+    scanf("%d", &num3); // 15
 
     // int max = MAX("%d");
 

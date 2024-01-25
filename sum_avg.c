@@ -24,11 +24,8 @@ int main()
     int * p_nums = malloc(sizeof(int));
     * p_nums = nums;
 
-
     printf("How many numbers would you like to use? ");
     scanf("%d", &nums);
-
-
 
     for(x = 1; x <= nums; x++) {
         printf("Number - %d : ", x);

@@ -39,8 +39,6 @@ int main()
 
     printf("The sum of the %d natural numbers: %d \n", n, sum);
 
-
-
     return 0;
 
 

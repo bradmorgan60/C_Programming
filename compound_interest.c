@@ -26,5 +26,11 @@ int main() {
 
     printf("The final amount: $%2f \n", final_amount);
 
+    if(final_amount < 10) {
+        printf("This sucks, bro.");
+    } else {
+        printf("Nice one, now keep stepping.")
+    }
+
     return 0;
 }

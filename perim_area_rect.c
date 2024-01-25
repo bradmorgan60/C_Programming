@@ -24,11 +24,12 @@ int main() {
     // printf("What is the perimeter of the rectangle?\n");
     // printf("What is the area of the rectangle?\n");
 
-    int height = 7;
+    int length = 7;
     int width = 5;
 
-    int area = height * width;
-    int perimeter = height + height + width + width;
+    int area = length * width;
+    // int perimeter = height + height + width + width;
+    int perimeter = 2*(length + width);
 
     printf("The perimeter of the rectangle is: %d \n", perimeter);
     printf("The area of the rectangle is: %d \n", area);    

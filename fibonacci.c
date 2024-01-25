@@ -12,18 +12,18 @@ Here is the Fibonacci series upto to 10 terms :
 
 int main() {
 
-    int num, x = 0, y = 1, z, i;
-
-    printf("Enter number of terms: ");
+    int x = 0, y = 1, z, i, num;
+    printf("Enter number of integers for Fibonacci sequence: ");
     scanf("%d", &num);
 
-    for(i = 3; i <= num; i++) {
-        z = x + y;  // 1 = 0 + 1, then loop will begin
+    for(i = 1; i <= num; i++) {
+        z = x + y;
         printf("%5d", z);
-        x = y; // update previous terms
-        y = z; // update current term
-
+        x = y;
+        y = z;
     }
+
     printf("\n");
+
     return 0;
 }
