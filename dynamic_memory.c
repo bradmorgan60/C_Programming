@@ -21,7 +21,23 @@ int main() {
         printf("ptr[%d] = %d\n", i, ptr[i]);
     }
 
-    free(ptr);
-    printf("%p was freed...\n", ptr);
+    // free(ptr);
+    // printf("%p was freed...\n", ptr);
+    printf("\n");
+    printf("Reallocating memory...\n");
+    ptr = realloc(ptr, sizeof(int) * (size + 5));
+
+    for (int i = size; i < (size + 5) ; i++) ptr[i] = 9;
+
+    for (int i = 0; i < (size + 5); i++) {
+        printf("ptr[%d] = %d\n", i, ptr[i]);
+    }
+
+
+    // use realloc to reallocate more space in the program
+    // ptr = realloc(ptr, sizeof(int) * (size + 5));
+
+
+
     return 0;
 }
